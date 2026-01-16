@@ -60,3 +60,17 @@ delete from test2 where name='이기자';
 
 -- '씨톰' 레코드를 삭제하시오.
 delete from test2 where name='김화사';
+
+-- idx가 17번 자료 삭제
+delete from test2 where idx = 17;
+delete from test2 where idx = 34;
+
+-- 새로 생성되는 idx값을 34번부터 부여하시오.
+alter table test2 auto_increment = 34;
+
+-- 성명 '연습맨' 추가?
+insert into test2 (name) values ('연습맨');
+insert into test2 (name) values (default,'연습맨2',39,'여자','청주');
+
+
+
